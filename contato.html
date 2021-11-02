@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos - Barbearia</title>
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/style-contato.css" />
+  </head>
+  <body>
+    <header>
+      <div class="caixa">
+        <h1><img src="./img/logo.png" alt="logo Barbearia" /></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html"> Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <form action="">
+        <fieldset>
+          <label for="nomeSobrenome">Nome e Sobrenome</label>
+          <input type="text" id="nomeSobrenome" class="input-padrao" required />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="input-padrao"
+            placeholder="seuemail@dominio.com"
+            required
+          />
+
+          <label for="telefone">Ligação</label>
+          <input
+            type="tel"
+            id="telefone"
+            class="input-padrao"
+            placeholder="(xx)x xxxx-xxxx"
+            required
+          />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            cols="30"
+            rows="10"
+            class="input-padrao"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Como prefere nosso contato?</legend>
+
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+            />
+            Email</label
+          >
+
+          <label for="radio-telefone"
+            ><input
+              type="radio"
+              name="contato"
+              value="telefone"
+              id="radio-telefone"
+            />
+            Telefone</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contato"
+              value="whatsapp"
+              id="radio-whatsapp"
+              checked
+            />
+            WhatsApp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <select name="" id="">
+            <option value="manha">Manhã</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label
+            ><input class="checkbox" type="checkbox" checked /> Gostaria de
+            receber nossas novidades por email?
+          </label>
+        </fieldset>
+
+        <input class="enviar" type="submit" value="Enviar formulário" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <img src="./img/logo-branco.png" alt="logo Barbearia" />
+      <p class="copyright" ¨>&copy; copyright: Barbearia - 2021</p>
+    </footer>
+  </body>
+</html>
